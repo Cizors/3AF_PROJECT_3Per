@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3af.controllers.LandlordProfileController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" opacity="0.8" prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: #5DADE2; -fx-border-color: gray; -fx-border-width: 0 0 3px 0;">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="83.0">
+               <image>
+                  <Image url="@../../../images/IsTudentLogo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fx:id="HomeName" onMouseClicked="#OpenHomePage" strokeType="OUTSIDE" strokeWidth="0.0" text="IsTudent">
+               <HBox.margin>
+                  <Insets right="860.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="LoginPageButton" mnemonicParsing="false" onAction="#OpenLoginPage" prefHeight="50.0" prefWidth="83.0" style="-fx-background-radius: 15px; -fx-background-color: #5DADE2; -fx-border-color: gray; -fx-border-radius: 15px;" text="Login">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="RegisterPageButton" mnemonicParsing="false" onAction="#OpenRegisterPage" prefHeight="50.0" prefWidth="90.0" style="-fx-background-radius: 15px; -fx-background-color: #5DADE2; -fx-border-color: gray; -fx-border-radius: 15px;" text="Cadastrar">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="140.0" layoutY="105.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: gray; -fx-border-radius: 20;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="240.0" prefWidth="180.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="P">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pessoa">
+                     <font>
+                        <Font name="Arial Black" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Locador">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="240.0" prefWidth="120.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="avaliações">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Line endX="300.0" startX="180.0" startY="-0.8526949882507324">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0,00 ★">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="estrelas">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Line endX="300.0" startX="180.0" startY="-0.8526949882507324">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="anos hospedando">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="140.0" layoutY="310.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: gray; -fx-border-radius: 20;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Informações confirmadas de">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pessoa">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="✓ Identidade">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="✓ Endereço de Email">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="✓ Número de Telefone">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <HBox layoutX="460.0" layoutY="105.0" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 20 20 0 0;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="280.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sobre Pessoa">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="✝ Idade: 00">
+                     <VBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="🌏 Moro em: Estado, Brasil">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="320.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="💬 Idiomas: Português">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="68.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="✆ Número de Telefone: +55 (82) 9 1111-1111">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Line endX="409.0" layoutX="651.0" layoutY="304.0" startX="-191.0" />
+      <HBox layoutX="460.0" layoutY="310.0" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 20 20 0 0;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avaliações de Pessoa">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;...Lugar super acochegante!&quot;">
+                     <VBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="ProfileIcon11" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="M">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="95.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;...Ótimo local, recomendo de certeza&quot;">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="ProfileIcon111" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="C">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" top="97.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Text layoutX="517.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maethe" />
+      <Text layoutX="808.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carlos" />
+      <Text layoutX="517.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="novembro de 2024">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="809.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="novembro de 2024">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Line endX="409.0" layoutX="651.0" layoutY="509.0" startX="-191.0" />
+      <VBox layoutX="460.0" layoutY="520.0" prefHeight="180.0" prefWidth="450.0" style="-fx-background-color: white; -fx-background-radius: 20 20 0 0;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Acomodações de Pessoa">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="180.0" prefWidth="450.0">
+               <children>
+                  <VBox prefHeight="180.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/house-landscape-template.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Casa">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="180.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/house-landscape-template.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Casa">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="180.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/house-landscape-template.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Casa">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="180.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/house-landscape-template.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Casa">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
